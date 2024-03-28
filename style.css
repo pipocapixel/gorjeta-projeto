@@ -1,11 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Space Mono", serif;
 }
-
-:root{
+:root {
     --green-100: #f3f9fa;
     --green-200: #c5e4e7;
     --green-300: #9ebbbd;
@@ -15,46 +14,47 @@
     --green-700: #3d6666;
     --green-800: #00474b;
     --light-green: #26c2ae;
-    --white: #ffff;
+    --white: #FFFFFF;
 }
-
-body{
+body {
     background-color: var(--green-200);
 }
-
-header{
-    display: flex;
+header {
+    display:flex;
     justify-content: center;
     padding-block: 2.8rem;
 }
-
-main{
+main {
     background-color: var(--white);
     padding: 2rem;
 }
-
-.conta{
+.conta,
+.gorjeta {
     margin-bottom: 2rem;
 }
 
-
-.conta label
-.gorjeta label{
+.gorjeta label 
+.gorjeta label,
+.pessoas label {
     color: var(--green-500);
     font-weight: 700;
 }
 
-.conta div{
+
+.conta div,
+.pessoas div {
     margin-top: 0.4rem;
     background-color: var(--green-100);
     padding: 0.4rem 1.2rem;
     display: flex;
-    align-items: center;
+    align-items: cneter;
     justify-content: space-between;
     border-radius: 0.3125rem;
 }
 
-.conta input{
+.conta input 
+.conta input,
+.pessoas input {
     border: none;
     text-align: right;
     width: 100%;
@@ -65,21 +65,45 @@ main{
     outline: none;
 }
 
-.conta input::placeholder{
+.conta input::placeholder 
+.conta input::placeholder,
+.pessoas input::placeholder {
     color: var(--green-300);
 }
 
-.conta:has(input:focus) div{
+.conta:has(input:focus) div 
+.conta:has(input:focus) div,
+.pessoas:has(input:focus) div  {
     outline: 2px solid var(--light-green);
 }
 
-.gorjeta div{
+.gorjeta div {
     margin-top: 1rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1;
+    gap: 1rem;
+}
+.gorjeta input {
+    font-size: 1.5rem;
+    font-weight: 700;
+    border: none;
+    text-align: center;
+    outline: none;
+    padding-block: 0.4rem;
+    border-radius: 0.3125rem;
+    background-color: var(--green-800);
+    color: var(--white);
+}
+.gorjeta #outra {
+    width: 100%;
+    background-color: var(--green-100);
+    color: var(--green-800);
 }
 
-gorjeta #outra{
-    width: 100%;
+.gorjeta #outra::placeholder {
+    color: var(--green-300);
+}
+
+.pessoas #erro {
+    display: none;
 }
