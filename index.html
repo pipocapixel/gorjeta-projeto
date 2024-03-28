@@ -3,49 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Gojeta</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title>Calculadora de gorjeta</title>
 </head>
 <body>
     <header>
-        <img src="./images/logo.svg" alt="">
+        <img src="./images/logo.svg" alt="Logo">
     </header>
     <main>
         <section class="informacoes">
             <form action="">
                 <div class="conta">
                     <label for="conta">Conta</label>
+                    <div>
+                        <img src="./images/icon-dollar.svg" alt="">
+                        <input type="number" name="conta" id="conta" placeholder="0">
+                    </div>
                 </div>
-                <div>
-                    <img src="./images/icon-dollar.svg" alt="icone do cifrao">
-                    <input type="number" name="conta" id="conta" placeholder="0">
-                </div>
-
                 <div class="gorjeta">
-                    <label for="outra"></label>
-                        <div>
-                            <input type="button" value="5%">
-                            <input type="button" value="10%">
-                            <input type="button" value="15%">
-                            <input type="button" value="25%">
-                            <input type="button" value="50%">
-                            <input type="number" name="outra" id="outra" placeholder="Outra">
-                        </div>
+                    <label>Selecione a gorjeta %</label>
+                    <div>
+                        <input type="button" value="5%">
+                        <input type="button" value="10%">
+                        <input type="button" value="15%">
+                        <input type="button" value="25%">
+                        <input type="button" value="50%">
+                        <input type="number" name="outra" id="outra" placeholder="Outra">
+                    </div>
                 </div>
                 <div class="pessoas">
-                    <label for="pessoas">Quantidade de pessoas</label>
+                    <label for="pessoas">Quantidade de Pessoas</label>
                     <p id="erro">Não pode ser zero</p>
-                </div>
-                <div>
-                    <img src="./images/icon-person.svg" alt="icone do cifrao">
-                    <input type="number" name="pessoas" id="pessoas" placeholder="0">
+                    <div>
+                        <img src="./images/icon-person.svg" alt="">
+                        <input type="number" name="pessoas" id="pessoas" placeholder="0">
+                    </div>
                 </div>
             </form>
         </section>
-
         <section class="resultados">
             <div class="gorjeta-total">
                 <p>
@@ -54,7 +52,6 @@
                 </p>
                 <strong>$ 0.00</strong>
             </div>
-
             <div class="total">
                 <p>
                     <strong>Total</strong> <br>
@@ -62,6 +59,8 @@
                 </p>
                 <strong>$ 0.00</strong>
             </div>
+
+
             <button>Limpar</button>
         </section>
     </main>
